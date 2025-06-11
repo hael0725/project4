@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'PyeojinGothic-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'PyeojinGothic-Bold';
+}
+
+nav {
+  font-weight: bold;
+}
+
+// 슬라이더 배너 ::::::::::::::::::::
+.slider {
+  height: auto;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, #ffffff);
+  }
+}
+
+
+// 베스트 아이템 :::::::::::::::::::::::::
+.best_product {
+  margin-top: 60px;
+  padding: 0 15px;
+  height: 110%;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .txt {
+      h3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        padding-top: 10px;
+      }
+
+      span {
+        float: left;
+        font-size: 14px;
+      }
+
+      i {
+        float: right;
+        color: darkgrey;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active,
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+// 엠디 픽 ::::::::::::::::: 
+.md_pick {
+  width: 100%;
+  height: 1100px;
+  padding: 0 15px;
+  margin-top: 60px;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .img_wrap {
+    display: flex;
+
+    .title_img {
+      width: 680px;
+      height: 850px;
+      border-radius: 16px;
+    }
+
+    .txt {
+      h3 {
+        font-size: 13px;
+      }
+    }
+
+    .wrap {
+      display: flex;
+
+      .side_img {
+        img {
+          width: 235px;
+          height: 315px;
+        }
+      }
+
+    }
+
+    .wrap2 {
+      display: flex;
+
+      .side_img {
+        img {
+          width: 235px;
+          height: 315px;
+        }
+      }
+
+    }
+  }
+
+}
