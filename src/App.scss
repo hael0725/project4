@@ -7,6 +7,7 @@
 
 body {
   font-family: 'PyeojinGothic-Bold';
+  cursor: url('../public/img/cherry.png'), auto;
 }
 
 nav {
@@ -49,7 +50,7 @@ nav {
 // 베스트 아이템 :::::::::::::::::::::::::
 .best_product {
   margin-top: 60px;
-  padding: 0 15px;
+  padding: 0 45px;
   height: 110%;
 
   h2 {
@@ -115,54 +116,209 @@ nav {
 // 엠디 픽 ::::::::::::::::: 
 .md_pick {
   width: 100%;
-  height: 1100px;
-  padding: 0 15px;
-  margin-top: 60px;
+  height: 110%;
+  padding: 0 45px;
+  margin: 80px auto;
 
+  h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .img_wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    .title_img {
+      width: 748px;
+      height: auto;
+      border-radius: 16px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .side_block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; 
+
+      .txt {
+        margin: 5px 0 50px 15px;
+        h3 {
+          font-size: 13px;
+          font-weight: bold;
+        }
+
+        span {
+        float: left;
+        font-size: 14px;
+      }
+
+      i {
+        margin-right: 20px;
+        float: right;
+        color: darkgrey;
+        cursor: pointer;
+        line-height: 25px;
+
+        &:hover {
+          color: red;
+        }
+      }
+      }
+
+      .wrap,
+      .wrap2 {
+        display: flex;
+
+        .side_img {
+          img {
+            width: 256px;
+            height: 360px;
+            object-fit: cover;
+            margin: 0 10px;
+            border-radius: 16px
+          }
+        }
+
+      }
+
+    }
+  }
+
+}
+
+// 뉴 아이템 ::::::::::::::::::::: 
+.new_item {
+  padding: 0 45px;
+  margin-bottom: 60px;
   h2 {
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 40px;
   }
 
-  .img_wrap {
-    display: flex;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
-    .title_img {
-      width: 680px;
-      height: 850px;
-      border-radius: 16px;
-    }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .txt {
       h3 {
-        font-size: 13px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        padding-top: 10px;
+      }
+
+      span {
+        float: left;
+        font-size: 14px;
+      }
+
+      i {
+        float: right;
+        color: darkgrey;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
       }
     }
 
-    .wrap {
-      display: flex;
+  }
 
-      .side_img {
-        img {
-          width: 235px;
-          height: 315px;
-        }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active,
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+// 흐르는 텍스트 박스 :::::::: 
+
+
+// 푸터 :::::::::::::::::::::
+.custom-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  border-top: 1px solid #ccc;
+
+  .footer-left {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+
+    .footer-column {
+      h4 {
+        font-weight: bold;
+        margin-bottom: 10px;
       }
 
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 6px;
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
 
-    .wrap2 {
-      display: flex;
-
-      .side_img {
-        img {
-          width: 235px;
-          height: 315px;
-        }
+    .sns-icons {
+      a {
+        margin-right: 10px;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
       }
-
     }
   }
 
+  .footer-right {
+    max-width: 300px;
+    color: #888;
+    line-height: 1.6;
+  }
 }
